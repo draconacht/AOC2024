@@ -24,13 +24,23 @@ for insn in insns:
 	if insn == "do()":
 		enabled = True
 	if insn == "don't()":
-		# theres also a cool way to do this with dropwhile and iterators
 		enabled = False
 	if insn.startswith("mul") and enabled:
 		nums = re.findall(r'\((\d+),(\d+)\)', insn)[0]
 		s += int(nums[0]) * int(nums[1])
 print(s)
 
+#%%
+i = iter(re.findall(r"(do\(\)|don't\(\)|mul\(\d+,\d+\))", inp))
+
+s = 0
+while (insn := next(i, None)) is not None:
+	if insn.startswith("mul"):
+		n = re.findall(r'\((\d+),(\d+)\)', insn)[0]
+		s += int(n[0]) * int(n[1])
+	if insn == "don't()":
+		i = dropwhile(lambda ins: ins != "do()", i)
+print(s)
 #%%
 valid_ranges = re.finditer(r"(?:^|do\(\))(.*?)(?:don't\(\)|$)", inp, re.DOTALL)
 s = 0
