@@ -65,5 +65,6 @@ for test in tests:
 		for j in range(i):
 			if test[j] in descendents[test[i]]:
 				test.insert(j, test.pop(i))
+				break
 	s += test[len(test)//2]
 s
