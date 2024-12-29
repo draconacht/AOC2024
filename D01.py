@@ -1,5 +1,5 @@
 #%%
-with open('D1_inp.txt') as fl:
+with open('D01_inp.txt') as fl:
     inp_raw = fl.read()
 #%%
 inp_raw="""3   4

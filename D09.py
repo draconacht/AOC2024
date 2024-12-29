@@ -1,7 +1,7 @@
 #%%
 inp = list(map(int, "2333133121414131402"))
 #%%
-with open("D9_inp.txt") as fl:
+with open("D09_inp.txt") as fl:
 	inp = list(map(int, fl.read()))
 #%%
 len(inp)

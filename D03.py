@@ -4,7 +4,7 @@ from operator import *
 from itertools import *
 from functools import *
 
-with open('D3_inp.txt') as fl:
+with open('D03_inp.txt') as fl:
 	inp = fl.read()
 #%% md
 # part 1

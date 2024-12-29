@@ -12,7 +12,7 @@ inp = """............
 ............
 ............"""
 #%%
-with open("D8_inp.txt") as fl:
+with open("D08_inp.txt") as fl:
 	inp = fl.read()
 #%%
 data = inp.splitlines()

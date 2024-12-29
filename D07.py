@@ -11,7 +11,7 @@ inp = """190: 10 19
 21037: 9 7 18 13
 292: 11 6 16 20"""
 #%%
-with open('D7_inp.txt') as fl:
+with open('D07_inp.txt') as fl:
 	inp = fl.read()
 #%%
 tests = []

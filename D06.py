@@ -1,5 +1,5 @@
 #%%
-with open("D6_inp.txt") as fl:
+with open("D06_inp.txt") as fl:
 	inp = fl.read().splitlines()
 #%%
 pos = None 

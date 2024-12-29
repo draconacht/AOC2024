@@ -4,7 +4,7 @@ from itertools import *
 from functools import *
 from collections import *
 #%%
-with open("D5_inp.txt") as fl:
+with open("D05_inp.txt") as fl:
 	inp = fl.read()
 #%%
 inp = """47|53

@@ -3,7 +3,7 @@ from itertools import *
 from operator import *
 from functools import *
 
-with open("D4_inp.txt") as f:
+with open("D04_inp.txt") as f:
 	inp = f.read().splitlines()
 #%%
 inp = """MMMSXXMASM
@@ -63,4 +63,3 @@ found = sum(1 for x in starmap(
 
 #%%
 found
-#%%
